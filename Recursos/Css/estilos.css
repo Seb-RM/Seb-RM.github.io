@@ -622,6 +622,7 @@ body {
   animation: arr-abj 1s ease-in-out infinite alternate-reverse both;
   -webkit-animation: arr-abj 1s ease-in-out infinite alternate-reverse both;
   pointer-events: all;
+  z-index: 15;
 }
 
 @keyframes arr-abj {
