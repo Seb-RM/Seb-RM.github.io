@@ -620,6 +620,7 @@ body {
   -o-transition: 0.4s;
   animation: arr-abj 1s ease-in-out infinite alternate-reverse both;
   -webkit-animation: arr-abj 1s ease-in-out infinite alternate-reverse both;
+  pointer-events: all;
 }
 
 @keyframes arr-abj {
