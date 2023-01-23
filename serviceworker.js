@@ -4,12 +4,12 @@ const CACHE_NAME = 'CV-WEB',
   urlsToCache = [
     './',
     'index.html',
-    '../Proyecto_Tic+_Desarrollo_FrontEnd/Recursos/Css/estilos.css',
+    '/Proyec_Tic_Desarrollo_FrontEnd/Recursos/Css/estilos.css',
 
-    '../Proyecto_Tic+_Desarrollo_FrontEnd/Recursos/Js/script.js',
+    '/Proyec_Tic_Desarrollo_FrontEnd/Recursos/Js/script.js',
 
-    './Proyecto_Tic+_Desarrollo_FrontEnd/Recursos/PWA-Iconos/icons/icon-512x512.png',
-    './Proyecto_Tic+_Desarrollo_FrontEnd/Recursos/PWA-Iconos/icons/icon-72x72.png'
+    '/Proyec_Tic_Desarrollo_FrontEnd/Recursos/PWA-Iconos/icons/icon-512x512.png',
+    '/Proyec_Tic_Desarrollo_FrontEnd/Recursos/PWA-Iconos/icons/icon-72x72.png'
   ];
 
 
@@ -39,7 +39,7 @@ self.addEventListener('activate', e => {
           })
         )
       })
-      // Le indica al SW activar el cache actual
+      
       .then(() => self.clients.claim())
   )
 });

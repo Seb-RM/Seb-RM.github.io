@@ -1,5 +1,5 @@
 
-/*================ FUNSION PRA GENERAR PERFILES ALEATORIOS =============*/
+/*================ FUNCION PARA GENERAR PERFILES ALEATORIOS =============*/
 /*=======================================================*/
 
 const nombreUno = document.querySelector('#nombre-nav');
@@ -42,7 +42,7 @@ const generarUsuario = async() => {
 
 document.addEventListener('DOMContentLoaded', generarUsuario);
 
-/*==================== FUNCIO EFECTO TIPEO DE LA SECCION DE INICIO ====================*/
+/*==================== FUNCION EFECTO TIPEO DE LA SECCION DE INICIO ====================*/
 
 const typed = new Typed('#typed', {
     
@@ -144,7 +144,7 @@ function validarEnviar(){
         }
 }
 
-/*============ FUNCION PARA ENVIR FORMULARIO COM SMTPJS =========*/
+/*============ FUNCION PARA ENVIAR FORMULARIO COM SMTPJS =========*/
 /*=================================================================*/
 /*----------- Funcion que resetea los advertencias-------*/
 
