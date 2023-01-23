@@ -318,6 +318,7 @@ body {
   height: 100%;
   width: 55%;
   z-index: 10;
+  pointer-events: none;
 }
 
 /* ----- ICONO MENU HAMBURGUESA -----*/
@@ -411,6 +412,7 @@ body {
   -moz-transition: transform 0.5s ease-in-out;
   -ms-transition: transform 0.5s ease-in-out;
   -o-transition: transform 0.5s ease-in-out;
+  pointer-events: all;
 }
 
 /*-------  BARRA MENU  PERFIL -----*/
