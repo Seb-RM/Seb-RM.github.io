@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CV Versión Web</title>
+
+    <meta name="description" content="Currículum en formato web-page, cuanta con las funcionalidades:
+                                       cambiar tema claro/oscuro, generador de perfiles aleatorios al cargar la página,
+                                       envío de formularios sin servidor, y configuración como PWA que permite instalar en la pantalla de inicio o escritorio.">
+    <meta name="keywords" content="Cv Curriculum Vitae Resume Web Online">
+    <meta name="robots" content="noindex, nofollow">
+
+    <meta name="author" content="SRM">
+    <meta name="copyright" content="SRM">
+    <meta name="language" content="es-AR">
+
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <link type="text/css" rel="shortcut icon" href="/Proyecto_Tic+_Desarrollo_FrontEnd/Recursos/Fav-icono/favicon.ico">
+
+    <meta name="twitter:card" content="summary">
+
+    <meta property="og:url"         content="index.html" >
+    <meta property="og:type"        content="website" >
+    <meta property="og:title"       content="Currículum Versión Web" >
+    <meta property="og:description" content="How much does culture influence creative thinking?" >
+    <meta property="og:locale"      content="es_AR">
+    <meta property="og:image"       content="/Proyecto_Tic+_Desarrollo_FrontEnd/Recursos/Imagen OG/Captura og.png">
+
+    
+    <!--=================== Iconos de boxicons ==============================-->
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--====================== Css principal ==============================-->
+
+    <link rel="stylesheet" href="./Recursos/css/estilos.css">
+
+    <!--======================= Manifiesto PWA ==========================-->
+    
+    <link rel="manifest" href="manifest.json">
+
+    <!--======================= Soporte para IOS ==========================-->
+    <meta name="theme-color" content="#2F3BA2">
+    <meta name="MobileOptimized" content="width">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="shortcut icon" type="image/png" href="./Proyecto_Tic+_Desarrollo_FrontEnd/Recursos/PWA-Iconos/icons/icon-512x512.png">
+    <link rel="apple-touch-icon" href="./Proyecto_Tic+_Desarrollo_FrontEndRecursos/PWA-Iconos/icons/icon-512x512.png">
+    <link rel="apple-touch-startup-image" href="./Proyecto_Tic+_Desarrollo_FrontEnd/Recursos/PWA-Iconos/icons/icon-512x512.png">
+
+    <link rel="apple-touch-icon" href="./Proyecto_Tic+_Desarrollo_FrontEnd/Recursos/PWA-Iconos/icons/icon-72x72.png">
+    <link rel="apple-touch-icon" href="./Proyecto_Tic+_Desarrollo_FrontEnd/Recursos/PWA-Iconos/icons/icon-96x96.png">
+    <link rel="apple-touch-icon" href="./Proyecto_Tic+_Desarrollo_FrontEnd/Recursos/PWA-Iconos/icons/icon-128x128.png">
+    <link rel="apple-touch-icon" href="./Proyecto_Tic+_Desarrollo_FrontEnd/Recursos/PWA-Iconos/icons/icon-144x144.png">
+    <link rel="apple-touch-icon" href="./Proyecto_Tic+_Desarrollo_FrontEnd/Recursos/PWA-Iconos/icons/icon-152x152.png">
+    <link rel="apple-touch-icon" href="./Proyecto_Tic+_Desarrollo_FrontEnd/Recursos/PWA-Iconos/icons/icon-192x192.png">
+    <link rel="apple-touch-icon" href="./Proyecto_Tic+_Desarrollo_FrontEnd/Recursos/PWA-Iconos/icons/icon-384x384.png">
+    <link rel="apple-touch-icon" href="./Proyecto_Tic+_Desarrollo_FrontEnd/Recursos/PWA-Iconos/icons/icon-512x512.png">
+    <meta name="apple-mobile-web-app-status-bar" content="default">
+
+</head>
+<body>
+
+  <!--=============== Encabezado =====================-->
+
+  <header class="encabezado" id="encabezado">
+
+    <div class="contenedor-menu">
+
+        <input  class="checkbox" type="checkbox" name="check" id="checkbox" title="Menu">
+
+        <div class="barras-menu">
+            <span class="lineas linea1"></span>
+            <span class="lineas linea2"></span>
+            <span class="lineas linea3"></span>
+        </div>
+
+        <div class="menu-items">
+
+          <i class='bx bx-moon cambiar-tema' title="Cambiar Tema" id="boton-tema"></i>
+
+          <div class="perfil-nav">
+
+            <img src="" alt="Imagen de Perfil" class="imagen-perfil " id="foto-nav">
+            <h2 class="perfil-nombre" id="nombre-nav">""</h2>
+
+            <div class="perfil-redes">
+              <a href="https://es-la.facebook.com/" target="_blank" rel="noopener noreferrer" title="Facebook"><i class='bx bxl-facebook-square'></i></a>
+              <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" title="LinkedIn"><i class='bx bxl-linkedin-square'></i></a>
+              <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" title="Twitter"><i class='bx bxl-twitter'></i></a>
+              <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" title="Instagram"><i class='bx bxl-instagram'></i></a>
+              <a href="https://github.com/" target="_blank" rel="noopener noreferrer" title="GitHub"><i class='bx bxl-github'></i></a>
+            </div>
+
+          </div>
+
+          <nav>
+
+            <ul>
+              <li><a href="#inicio" class="nav_link" id="checkprueba"><i class='bx bx-home-alt-2'></i> <span>Inicio</span></a></li>
+              <li><a href="#perfil" class="nav_link"><i class='bx bx-user'></i> <span>Perfil</span></a></li>
+              <li><a href="#educacion" class="nav_link"><i class='bx bx-book-alt'></i> <span>Educación</span></a></li>
+              <li><a href="#experiencia" class="nav_link"><i class='bx bx-briefcase-alt'></i> <span>Experiencia</span></a></li>
+              <li><a href="#habilidades" class="nav_link"><i class='bx bx-receipt'></i> <span>Habilidades</span></a></li>
+              <li><a href="#referencias" class="nav_link"><i class='bx bx-link-external'></i> <span>Referencias</span></a></li>
+              <li><a href="#idiomas" class="nav_link"><i class='bx bx-flag'></i> <span>Idiomas</span></a></li>
+              <li><a href="#intereses" class="nav_link"><i class='bx bx-grid-alt'></i> <span>Intereses</span></a></li>
+              <li><a href="#social" class="nav_link"><i class='bx bx-hash'></i> <span>Redes Sociales</span></a></li>
+              <li><a href="#contacto" class="nav_link"><i class='bx bx-envelope-open'></i> <Span>Contacto</Span></a></li>
+            </ul>
+
+          </nav>
+          
+        </div>
+     
+    </div>
+
+  </header>
+   
+  <div class="contenedor" id="contenedor">
+
+    <main class="principal contenedor-bd">
+      <!--=============== INICIO =====================-->
+
+      <section class="inicio" id="inicio">
+
+        <div class="contenedor-inicio">
+
+          <h1 id="nombre-inicio">""</h1>
+          <div class="tipeo"><h2 ><span class="typed" id="typed"  data-typed-strings="Designer, Developer, Freelancer, Photographer">""</span><span class="cursor"></span></h2></div>
+
+          <a href="#perfil" class="boton-desp-abajo" title="Ver Más"><i class='bx bxs-chevrons-down'></i></a>
+
+        </div>
+
+      </section><!-- Fin seccion Inicio-->
+
+      <div class="contenedor-cv" id="contenedor-cv">
+
+        <!--=============== PERFIL =====================-->
+
+        <section class="seccion" id="perfil">
+
+          <h3 class="titulo-seccion">Sobre Mi</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate iusto incidunt, ab voluptatibus modi autem dolor.</p>
+
+          <div class="perfil-contenedor">
+
+            <div class="perfil-contenido">
+
+              <img src="" alt="Imagen de Perfil" class="foto-perfil" id="foto-perfil">
+
+              <div class="perfil-elemento">
+
+                <h4><span>Especialista en Desarrolo y Diseño Web</span></h4>
+                <p><em>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit nostrum deserunt reprehenderit vel, porro neque sit consequuntur harum eligendi ipsam?</em></p>
+                  
+                <ul>
+                  <li><i class='bx bx-user'></i> <span  id="nombre-perfil"></span></li>
+                  <li><i class='bx bx-map'></i> <span id="direccion"></span></li>
+                </ul>
+
+                <ul>
+                  <li><i class='bx bx-phone'></i> <span id="telefono"></span></li>
+                  <li><i class='bx bx-envelope'></i> <span id="correo"></span></li>
+                </ul>
+
+              </div>
+
+            </div>
+
+          </div>
+            
+        </section>
+      
+        <!--=============== EDUCACION =====================-->
+      
+        <section class="seccion" id="educacion">
+            
+          <div class="educacion-contenedor">
+
+            <h3 class="titulo-seccion">Educación</h3>
+
+            <div class="educacion-contenido">
+
+              <div class="ed-ex-estilo">
+
+                <span class="ed-ex-puntero"></span>
+                <span class="ed-ex-linea"></span>
+
+              </div>
+
+              <div class="educacion-elemento">
+
+                <h4>Master en Desarrollo Web</h4>
+                <h5>2016 - 2017</h5>
+                <p><em>Universidad de Tecnologías</em></p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam minima rerum incidunt molestias dicta! Rem ipsam quas voluptatum voluptatem?</p>
+
+              </div>
+
+            </div>
+
+            <div class="educacion-contenido">
+
+              <div class="ed-ex-estilo">
+
+                <span class="ed-ex-puntero"></span>
+                <span class="ed-ex-linea"></span>
+
+              </div>
+
+              <div class="educacion-elemento">
+
+                <h4>Licenciatura en Diseño</h4>
+                <h5>2013 - 2016</h5>
+                <p><em>Colegio de Diseño</em></p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim laborum labore, explicabo modi unde magnam consequatur qui?</p>
+                
+              </div>
+
+            </div>
+
+            <div class="educacion-contenido">
+
+              <div class="ed-ex-estilo">
+
+                <span class="ed-ex-puntero"></span>
+                <span class="ed-ex-linea"></span>
+
+              </div>
+
+              <div class="educacion-elemento">
+
+                <h4>Desarrollo Web Full-Stack</h4>
+                <h5>2012 - 2014</h5>
+                <p><em>Instituto Informatico Online</em></p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae libero quidem eveniet dolores dolorem ratione.</p>
+                
+              </div>
+
+            </div>
+
+          </div>
+
+        </section>
+      
+        <!--=============== EXPERIENCIA =====================-->
+      
+        <section class="seccion" id="experiencia">
+
+          <div class="experiencia-contenedor">
+
+            <h3 class="titulo-seccion">Experiencia</h3>
+
+            <div class="experiencia-contenido">
+
+              <div class="ed-ex-estilo">
+
+                <span class="ed-ex-puntero"></span>
+                <span class="ed-ex-linea"></span>
+
+              </div>
+
+              <div class="experiencia-elemento">
+
+                <h4><span class="ad-g">Director</span> de Desarrollo Front-End y UX </h4>
+                <h5>2020 - Hasta el presente</h5>
+                <p><em>Techno Alliance</em></p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda cum repudiandae eligendi distinctio minus harum sequi eaque maiores a aperiam?</p>
+
+                <ul>
+                  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo sed vero unde.</li>
+                  <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat quam neque nobis voluptatum.</li>
+                  <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum, similique sed?</li>
+                  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quaerat accusantium quam?.</li>
+                </ul>
+
+              </div>
+
+            </div>
+
+            <div class="experiencia-contenido">
+
+              <div class="ed-ex-estilo">
+
+                <span class="ed-ex-puntero"></span>
+                <span class="ed-ex-linea"></span>
+
+              </div>
+
+              <div class="experiencia-elemento">
+
+                <h4><span  class="ad-g">Desarrollador</span> Web</h4>
+                <h5>2017 - 2020</h5>
+                <p><em>Center Seguros Ltd.</em></p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda cum repudiandae eligendi distinctio minus harum sequi eaque maiores a aperiam?</p>
+                    
+                <ul>
+                  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo sed vero unde.</li>
+                  <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat quam neque nobis voluptatum.</li>
+                  <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum, similique sed?</li>
+                  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quaerat accusantium quam?.</li>
+                </ul>
+
+              </div>
+
+            </div>
+
+            <div class="experiencia-contenido">
+
+              <div class="ed-ex-estilo">
+
+                <span class="ed-ex-puntero"></span>
+                <span class="ed-ex-linea"></span>
+
+              </div>
+
+              <div class="experiencia-elemento">
+
+                <h4><span class="ad-g">Programador</span> Web</h4>
+                <h5>2014 - 2016</h5>
+                <p><em>Sistemas Informaticos SyL</em></p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda cum repudiandae eligendi distinctio minus harum sequi eaque maiores a aperiam?</p>
+                  
+                <ul>
+                  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo sed vero unde.</li>
+                  <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat quam neque nobis voluptatum.</li>
+                  <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum, similique sed?</li>
+                  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quaerat accusantium quam?.</li>
+                </ul>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </section>
+      
+        <!--=============== HABILIDADES =====================-->
+      
+        <section class="seccion" id="habilidades">
+
+          <div class="habilidades-contenedor">
+
+            <h3 class="titulo-seccion">Habilidades</h3>
+
+            <div class="habilidades-contenido">
+
+              <div class="habilidades-elemento">
+
+                <ul>
+                  <li> HTML5 </li>
+                  <li> CSS3</li>
+                  <li> JavaScript</li>
+                  <li> React</li>
+                </ul>
+
+              </div>
+
+              <div class="habilidades-elemento">
+
+                <ul>
+                  <li> GIT</li>
+                  <li> Angular</li>
+                  <li> SQL</li>
+                  <li> Sass</li>
+                  <li> WordPress</li>
+                </ul>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </section>
+      
+        <!--=============== REFERENCIAS =====================-->
+
+        <section class="seccion" id="referencias">
+
+          <div class="referencias-contenedor">
+
+            <h3 class="titulo-seccion">Referencias</h3>
+
+            <div class="referencias-contenido">
+
+              <div class="referencias-elemento">
+
+                <p><em>Sr. Director</em></p>
+                <h4>Juan Exposito</h4>
+
+                <ul>
+                  <li><i class='bx bx-phone'></i> Tel: +999 888 777</li>
+                  <li><i class='bx bx-envelope'></i> Email : usuario@ejemplomail.com</li>
+                </ul>
+
+            </div>
+
+              <div class="referencias-elemento">
+
+                <p><em>Jefa de Deserrollo</em></p>
+                <h4>Marta Arenas</h4>
+
+                <ul>
+                  <li><i class='bx bx-phone'></i> Tel: +888 555 2222</li>
+                  <li><i class='bx bx-envelope'></i> Email : usuario@ejemplomail.com</li>
+                </ul>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </section>
+      
+        <!--================ IDIOMAS =====================-->
+      
+        <section class="seccion" id="idiomas">
+
+          <div class="idiomas-contenedor">
+
+            <h3 class="titulo-seccion">Idiomas</h3>
+
+            <div class="idiomas-contenido">
+
+              <ul>
+                <li>
+                  <span class="puntero-id"></span> Inglés
+                </li>
+                <li>
+                  <span class="puntero-id"></span> Portugués
+                </li>
+                <li>
+                  <span class="puntero-id"></span> Alemán
+                </li>
+                <li>
+                  <span class="puntero-id"></span> Ruso
+                </li>
+              </ul>
+
+            </div>
+              
+          </div>
+
+        </section>
+      
+      <!--================ INTERESES =====================-->
+      
+        <section class="seccion" id="intereses">
+
+          <div class="intereses-contenedor">
+
+            <h3 class="titulo-seccion">Intereses</h3>
+
+            <div class="intereses-contenido">
+
+              <div class="intereses-elemento">
+
+                <i class='bx bx-headphone'></i><span>Música</span>
+
+              </div>
+
+              <div class="intereses-elemento">
+
+                <i class='bx bx-book'></i><span>Lectura</span>
+
+              </div>
+
+              <div class="intereses-elemento">
+
+                <i class='bx bxs-plane-alt'></i><span>Viajar</span>
+
+              </div>
+
+              <div class="intereses-elemento">
+
+                <i class='bx bx-dumbbell'></i><span>Ejercicios</span>
+
+              </div>
+
+              <div class="intereses-elemento">
+
+                <i class='bx bxs-film' ></i><span>Cine</span>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </section>
+      
+        <!--================ SOCIAL =====================-->
+    
+        <section class="seccion" id="social">
+
+          <div class="social-contenedor">
+
+            <h3 class="titulo-seccion">Redes Sociales</h3>
+
+            <div class="social-contenido">
+
+              <div class="social-elemento">
+
+                <a href="https://es-la.facebook.com/" target="_blank" rel="noopener noreferrer" title="Facebook"><i class='bx bxl-facebook-square'></i> @nombredeusuario</a>
+                
+              </div>
+
+              <div class="social-elemento">
+
+                <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" title="LinkedIn"><i class='bx bxl-linkedin-square'></i> @nombredeusuario</a>
+                
+              </div>
+
+              <div class="social-elemento">
+
+              <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" title="Twitter"><i class='bx bxl-twitter'></i> @nombredeusuario</a>
+                
+              </div>
+                
+              <div class="social-elemento">
+
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" title="Instagram"><i class='bx bxl-instagram'></i> @nombredeusuario</a>
+                
+              </div>
+
+              <div class="social-elemento">
+
+                <a href="https://github.com/" target="_blank" rel="noopener noreferrer" title="GitHub"><i class='bx bxl-github'></i> @nombredeusuario</a>
+                
+              </div>
+
+            </div>
+
+          </div>
+
+        </section>
+  
+        <!--=============== CONTACTO =====================-->
+  
+        <section class="seccion" id="contacto">
+
+          <div class="contacto-contenedor">
+
+            <h3 class="titulo-seccion">Contactame</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea ex dolorum fugiat, maiores quibusdam debitis exercitationem maxime asperiores!</p>
+                
+            <div class="contacto-contenido">
+
+              <form onsubmit="enviarMail(); reset(); resetearAlertas (); return false">
+                    
+                <div class="contacto-elemento">
+                  <label  class="etiqueta-invisible" for="nombre">Nombre</label>
+                  <input type="text" name="nombre" id="nombre" placeholder="Escribe tu Nombre" onkeyup="validarNombre()">
+                  <span id="error-nombre"></span>
+                </div>
+
+                <div class="contacto-elemento">
+                  <label class="etiqueta-invisible" for="email">Correo Electronico</label>
+                  <input type="email" name="email" id="email" placeholder="Tu Email" onkeyup="validarEmail()">
+                  <span id="error-email"></span>
+                </div>
+
+                <div class="contacto-elemento">
+                  <label class="etiqueta-invisible" for="asunto">Asunto</label>
+                  <input type="text" name="asunto" id="asunto" placeholder="El Asunto" onkeyup="validarAsunto()">
+                  <span id="error-asunto"></span>
+                </div>
+
+                <div class="contacto-elemento">
+                  <label class="etiqueta-invisible" for="mensaje">Escribe tu mensaje</label>
+                  <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Y tu mensaje." onkeyup="validarMensaje()"></textarea>
+                  <span id="error-mensaje"></span>
+                </div>
+
+                <button onclick="return validarEnviar()">Enviar Mensaje</button>
+                <span id="error-enviar"></span>
+
+              </form>
+
+            </div>
+
+          </div>
+
+        </section>
+
+      </div>
+
+    </main>
+
+    <footer class="pie-pagina" id="pie-pagina">
+      <small>&copy; Copyright 2023, SRM</small>
+    </footer>
+  </div>
+
+  <!--============== BOTON VOLVER AL INICIO    ==============-->
+
+  <div id="boton-inicio">
+    
+    <a href="#" class="boton-volver boton-oculto" id="boton-volver" title="Volver al Inicio">
+    <i class='bx bxs-up-arrow-alt icono-volver'></i>
+   </a>
+  
+  </div>
+
+
+  <!--======== LIBRERIA TYPE.JS PARA EL EFECTO TIPEO EN LA SECCION INICIO =======-->
+
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+  <!--========== Libreria para enviar formularios sin servidor =======-->
+
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+  <!--========== Javascript principal ==================--> 
+
+  <script  src="/Proyecto_Tic+_Desarrollo_FrontEnd/Recursos/Js/script.js"></script>
+
+</body>
+</html>
