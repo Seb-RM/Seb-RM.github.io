@@ -399,7 +399,7 @@ body {
   box-shadow: inset 1px 1px 500px rgba(179, 173, 173, 0.5);
   background-color: #68c3ea;
   color: #2F2D2E;
-  height: 100vh;
+  height: 100%;
   text-align: center;
   overflow-y: auto;
   overflow-x: hidden;
@@ -414,6 +414,7 @@ body {
   -ms-transition: transform 0.5s ease-in-out;
   -o-transition: transform 0.5s ease-in-out;
   pointer-events: all;
+  z-index: 20;
 }
 
 /*-------  BARRA MENU  PERFIL -----*/

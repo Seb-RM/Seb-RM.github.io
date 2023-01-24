@@ -159,7 +159,7 @@ function resetearAlertas (){
 function enviarMail () {
     Email.send({
         SecureToken : '991419df-010b-464e-abc7-92da77e27c67',
-        To : 'brok.ragingthunder@gmail.com',
+        To : 'srmmoto@gmail.com',
         From : 'srmmoto@gmail.com',
         Subject : 'Mensaje enviado desde el formulario de la página CV',
         Body : "Nombre: " + document.getElementById('nombre').value
