@@ -1030,7 +1030,7 @@ footer small {
   cursor: pointer;
 }
 
-/*======= MEDIA QQUERIES PARA PANTALLAS GRANDES ========*/
+/*======= MEDIA QUERIES PARA PANTALLAS GRANDES ========*/
 /*======================================================*/
 
 /*============= PANTALLAS PEQUEÑAS ==============*/
@@ -1043,6 +1043,13 @@ footer small {
   .contenedor-cv {
     margin:  0 0 1rem 0;
   }
+  .social-contenido{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  }
+  
 }
 
 /*============= PANTALLAS GRANDES ==============*/
