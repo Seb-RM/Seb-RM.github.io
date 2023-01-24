@@ -4,12 +4,12 @@ const CACHE_NAME = 'CV-WEB',
   urlsToCache = [
     './',
     'index.html',
-    '/Proyec_Tic_Desarrollo_FrontEnd/Recursos/Css/estilos.css',
+    './Recursos/Css/estilos.css',
 
-    '/Proyec_Tic_Desarrollo_FrontEnd/Recursos/Js/script.js',
+    './Recursos/Js/script.js',
 
-    '/Proyec_Tic_Desarrollo_FrontEnd/Recursos/PWA-Iconos/icons/icon-512x512.png',
-    '/Proyec_Tic_Desarrollo_FrontEnd/Recursos/PWA-Iconos/icons/icon-72x72.png'
+    './Recursos/PWA-Iconos/icons/icon-512x512.png',
+    './Recursos/PWA-Iconos/icons/icon-72x72.png'
   ];
 
 
