@@ -1038,16 +1038,23 @@ footer small {
 @media screen and (max-width: 550px) {
   
   .titulo-seccion{
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
   .contenedor-cv {
     margin:  0 0 1rem 0;
   }
+
+  .perfil-elemento ul{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+  }
   .social-contenido{
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-content: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
   }
   
 }
