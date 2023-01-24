@@ -987,7 +987,7 @@ footer small {
   background-color: #333;
 }
 
-.tema-dark input, .dark-theme textarea{
+.tema-dark input, .tema-dark textarea{
   color: #fefbed;
 }
 
@@ -1032,6 +1032,20 @@ footer small {
 
 /*======= MEDIA QQUERIES PARA PANTALLAS GRANDES ========*/
 /*======================================================*/
+
+/*============= PANTALLAS PEQUEÑAS ==============*/
+
+@media screen and (max-width: 550px) {
+  
+  .titulo-seccion{
+    font-size: 1.3rem;
+  }
+  .contenedor-cv {
+    margin:  0 0 1rem 0;
+  }
+}
+
+/*============= PANTALLAS PEQUEÑAS ==============*/
 
 @media screen and (min-width: 992px){
   header{
