@@ -657,15 +657,12 @@ body {
 }
 
 .perfil-elemento ul{
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  align-content: space-evenly;
-  justify-content: space-evenly;
-  list-style: none;
-  gap: .6rem;
-  margin: .7rem .2rem;
-  padding: 0 .2rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
 }
+
 
 .perfil-elemento li{
   display: flex;
@@ -1099,6 +1096,16 @@ footer small {
     transform-origin: 0% 0%;
   }
 
+  .perfil-elemento ul{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-content: space-evenly;
+    justify-content: space-evenly;
+    list-style: none;
+    gap: .6rem;
+    margin: .7rem .2rem;
+    padding: 0 .2rem;
+  }
   footer small {
     margin: 0;
     display: block;
