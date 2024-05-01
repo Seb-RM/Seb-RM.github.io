@@ -1,7 +1,5 @@
-;
-
-const CACHE_NAME = 'CV-WEB',
-  urlsToCache = [
+const CACHE_NAME = 'CV-WEB';
+const urlsToCache = [
     './',
     'index.html',
     './Recursos/Css/estilos.css',
@@ -21,7 +19,7 @@ self.addEventListener('install', e => {
           .then(() => self.skipWaiting())
       })
       .catch(err => console.log('Falló registro de cache', err))
-  )
+  );
 });
 
 self.addEventListener('activate', e => {
@@ -37,11 +35,11 @@ self.addEventListener('activate', e => {
               return caches.delete(cacheName)
             }
           })
-        )
+        );
       })
       
       .then(() => self.clients.claim())
-  )
+  );
 });
 
 
