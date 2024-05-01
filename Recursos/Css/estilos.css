@@ -5,7 +5,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital@0;1&display=swap');
 
-/*================RESETEO css =================
+/*================RESETÉO css =================
 ===============================================*/
 
 * {
@@ -59,7 +59,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
 }
 
-/*================= FUENTES  DE TITULOS Y SECCIONES/ESTILOS DE TITULOS ==================*/
+/*================= FUENTES  DE TÍTULOS Y SECCIONES/ESTILOS DE TÍTULOS ==================*/
 
 .titulo-seccion{
   font-family: Goudy Old Style, Garamond, Big Caslon, Times New Roman, serif;
@@ -309,7 +309,7 @@ body {
   margin: 0  .6rem;
 }
 
-/*=================  MENU NAVEGACION ==================*/
+/*=================  MENU NAVEGACIÓN ==================*/
 
 .contenedor-menu {
   display: block;
@@ -420,20 +420,20 @@ body {
 /*-------  BARRA MENU  PERFIL -----*/
 
 .menu-items .imagen-perfil{
-   width: auto;
-   margin: 0 auto;
-   display: block;
-   height: 150px;
-   border:   #2c2f3f;
-   border-width: 18px 1px 1px 12px;
-   border-style: double solid solid double;
-   box-shadow: 4px 4px #2c2f3f, 8px 8px #c4b20f, 12px 12px #054894;
-   background-color: #c4b20f;
-   border-radius: 5%;
-   -webkit-border-radius: 5%;
-   -moz-border-radius: 5%;
-   -ms-border-radius: 5%;
-   -o-border-radius: 5%;
+    width: auto;
+    margin: 0 auto;
+    display: block;
+    height: 150px;
+    border:   #2c2f3f;
+    border-width: 18px 1px 1px 12px;
+    border-style: double solid solid double;
+    box-shadow: 4px 4px #2c2f3f, 8px 8px #c4b20f, 12px 12px #054894;
+    background-color: #c4b20f;
+    border-radius: 5%;
+    -webkit-border-radius: 5%;
+    -moz-border-radius: 5%;
+    -ms-border-radius: 5%;
+    -o-border-radius: 5%;
 }
 
 .menu-items .perfil-nav{
@@ -478,7 +478,7 @@ body {
   background-color: #2F2D2E;
 }
 
-/*--------- ESTILO PARA MOSTRA/OCULTAR LA BARRA DE MENU-------*/
+/*--------- ESTILO PARA MOSTRAR/OCULTAR LA BARRA DE MENU-------*/
 
 .contenedor-menu input[type="checkbox"]:checked ~
 .menu-items {
@@ -516,7 +516,7 @@ body {
   -o-transform: rotate(-45deg);
 }
 
-/*=================  SECCION INICIO ==================*/
+/*=================  SECCIÓN INICIO ==================*/
 
 #inicio {
   width: 100%;
@@ -531,7 +531,7 @@ body {
   justify-content: center;
   align-items: center;
 }
-/*------ Animacion Fondo Inicio------*/
+/*------ Animación Fondo Inicio------*/
 
 @keyframes GradientBackground {
   0% {
@@ -579,7 +579,7 @@ body {
   100% {
     background-position: 50% 0%;
   }
-}/*------- Fin animacion de fondo -------*/
+}/*------- Fin animación de fondo -------*/
 
 #inicio h2 {
     margin-bottom: 3.125rem;
@@ -612,7 +612,7 @@ body {
 @keyframes blink-caret {
   from, to { border-color: transparent }
   50% { border-color: orange; }
-}/*---------- fin efecto tipedo -------*/
+}/*---------- fin efecto tipeo -------*/
 
 #inicio .boton-desp-abajo {
   transition: 0.4s;
@@ -652,8 +652,7 @@ body {
 }
 
 .perfil-contenido img{
- margin: .8rem auto;
- 
+  margin: .8rem auto;
 }
 
 .perfil-elemento ul{
@@ -687,7 +686,7 @@ body {
   -o-border-radius: 5%;
 }
 
-/*================= SECCION EDUCACION Y EXPERIENCIA ==================*/
+/*================= SECCIÓN EDUCACIÓN Y EXPERIENCIA ==================*/
 
 .educacion-contenido, .experiencia-contenido{
   display: flex;
@@ -880,7 +879,7 @@ form button{
   display: block;
 }
 
-/*================== BOTON VOLVER AL INICIO  ===================*/
+/*================== BOTÓN VOLVER AL INICIO  ===================*/
 
 .boton-volver{
   position: fixed;
@@ -1015,7 +1014,7 @@ footer small {
   font-weight: 600;
 }
 
-/*=============== ESTILOS BOTON CAMBIO DE TEMA ===============0*/
+/*=============== ESTILOS BOTÓN CAMBIO DE TEMA ===============0*/
 
 .cambiar-tema{
   position: relative;
@@ -1082,7 +1081,7 @@ footer small {
     width: 100%;
   }
 
-   .menu-items {
+  .menu-items {
     width: auto;
     transform: translate(0%);
     -webkit-transform: translate(0%);

@@ -1,5 +1,5 @@
 
-/*================ FUNCION PARA GENERAR PERFILES ALEATORIOS =============*/
+/*================ FUNCIÓN PARA GENERAR PERFILES ALEATORIOS =============*/
 /*=======================================================*/
 
 const nombreUno = document.querySelector('#nombre-nav');
@@ -38,15 +38,15 @@ const generarUsuario = async() => {
     }
 };
 
-  /*------------- GENERA UN USUARIO AL CARGAR LA PAGINA ========*/
+/*------------- GENERA UN USUARIO AL CARGAR LA PAGINA ========*/
 
 document.addEventListener('DOMContentLoaded', generarUsuario);
 
-/*==================== FUNCION EFECTO TIPEO DE LA SECCION DE INICIO ====================*/
+/*==================== FUNCIÓN EFECTO TIPEO DE LA SECCIÓN DE INICIO ====================*/
 
 const typed = new Typed('#typed', {
     
-    strings: ['Desarrollo Web', 'Diseño Web','Desarrolo UI/UX', 'Freelance'],
+    strings: ['Desarrollo Web', 'Diseño Web','Desarrollo UI/UX', 'Freelance'],
     stringsElement: null,
     typeSpeed: 75,
     startDelay: 2000,
@@ -58,9 +58,9 @@ const typed = new Typed('#typed', {
     showCursor: false,
     contentType: 'html',
 
-  });
+});
 
-/*==================== BOTON VOLVER AL INICIO ====================*/
+/*==================== BOTÓN VOLVER AL INICIO ====================*/
 
 function volverInicio(){
     const scrollTop = document.getElementById('boton-volver');
@@ -71,7 +71,7 @@ function volverInicio(){
 window.addEventListener('scroll', volverInicio);
 
 
-/*==================== FUNCION PARA REMOVER EL MENU AL HACER CLICK ====================*/
+/*==================== FUNCIÓN PARA REMOVER EL MENU AL HACER CLICK ====================*/
 
 const navLink = document.querySelectorAll('.nav_link');
 
@@ -83,7 +83,7 @@ function linkAction(){
 navLink.forEach(n => n.addEventListener('click', linkAction));
 
 
-/*================ Validacion de formulario =============*/
+/*================ Validación de formulario =============*/
 /*=======================================================*/
 
 let errorNombre = document.getElementById('error-nombre');
@@ -106,7 +106,7 @@ function validarEmail(){
     let email = document.getElementById('email').value;
 
         if ( email == 0) {
-            errorEmail.innerHTML = 'Por favor escribe tu direcciíon de correo.';
+            errorEmail.innerHTML = 'Por favor escribe tu dirección de correo.';
             return false;
         }
         if ( !email.match(/^[A-Za-z\._\-[0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)) {
@@ -124,7 +124,7 @@ function validarAsunto(){
             errorAsunto.innerHTML = 'Por favor escribe un asunto para tu mensaje.';
             return false;
         }
-      errorAsunto.innerHTML = "<i class='bx bxs-check-circle'></i>";
+        errorAsunto.innerHTML = "<i class='bx bxs-check-circle'></i>";
         return true;
 }
 function validarMensaje(){
@@ -144,9 +144,9 @@ function validarEnviar(){
         }
 }
 
-/*============ FUNCION PARA ENVIAR FORMULARIO COM SMTPJS =========*/
+/*============ FUNCIÓN PARA ENVIAR FORMULARIO COM SMTPJS =========*/
 /*=================================================================*/
-/*----------- Funcion que resetea los advertencias-------*/
+/*----------- Función que resetéa los advertencias-------*/
 
 function resetearAlertas (){
 
@@ -154,7 +154,6 @@ function resetearAlertas (){
     errorEmail.innerHTML = '';
     errorAsunto.innerHTML = '';
     errorMensaje.innerHTML = '';
-       
 }
 function enviarMail () {
     Email.send({
@@ -167,11 +166,11 @@ function enviarMail () {
                 +"<br>Asunto: " + document.getElementById('asunto').value
                 +"<br>Mensaje: " + document.getElementById('mensaje').value
     }).then(
-      message => alert(message)
+        message => alert(message)
     );
 }
 
-/*==================== FUNCION PARA CAMBIAR TEMA CLARO/OSCURO ====================*/ 
+/*==================== FUNCIÓN PARA CAMBIAR TEMA CLARO/OSCURO ====================*/ 
 
 const botonTema = document.getElementById('boton-tema');
 const contenedor = document.getElementById('contenedor');
@@ -185,48 +184,42 @@ const iconoTema = 'bx-sun';
 
 // buscar si hay un tema y un icono seleccionado ya guardado, y aplica a una const
 const temaSeleccionado = localStorage.getItem('tema-seleccionado');
+
 const iconoSeleccionado = localStorage.getItem('icono-seleccionado');
 
-// con le tema odtenido verificamos si es un tema dark, los mismo con el icono
-
-const temaActual = function (){
-    document.body.classList.contains(temaDark) ? 'dark' : 'light';
-};
-
-const iconoActual = function (){
-    document.body.classList.contains(iconoTema) ? 'dark' : 'light';
-};
-
-// con un tema identificado lo cambiamos para cambiar los estilos
-if (temaSeleccionado) {
-  
-  document.body.classList[temaSeleccionado === 'dark' ? 'add' : 'remove'](temaDark);
-  botonTema.classList[iconoSeleccionado === 'bx-moon' ? 'add' : 'remove'](iconoTema);
-}
-
-// Evento click para el boton cambio de tema
-    botonTema.addEventListener('click', () => {
-    
+// Función para cambiar el tema
+function cambiarTema() {
     botonTema.classList.toggle(iconoTema);
     contenedor.classList.toggle(temaDark);
     contenedorCv.classList.toggle(temaDark);
     encabezado.classList.toggle(temaDark);
     footer.classList.toggle(temaDark);
     botonVolver.classList.toggle(temaDark);
-
     
-    // ------------Se guarda el tema seleccionado----------////
-    localStorage.setItem('tema-seleccionado', temaActual());
-    localStorage.setItem('icono-seleccionado', iconoActual());
-});
+    //------Guardar el tema y el icono seleccionados en localStorage
+    const temaActual = contenedor.classList.contains(temaDark) ? 'dark' : 'light';
+    const iconoActual = contenedor.classList.contains(temaDark) ? "dark" : "light";
+    localStorage.setItem('tema-seleccionado', temaActual);
+    localStorage.setItem('icono-seleccionado', iconoActual);
+}
 
-/*==================== DECLARACION EL SERVICE WORKER ====================*/ 
+// Agregar evento al botón de cambio de tema
+botonTema.addEventListener('click', cambiarTema);
+
+// Aplicar el tema y el icono seleccionados del localStorage al cargar la página
+if (temaSeleccionado && iconoSeleccionado) {
+    if (temaSeleccionado === 'dark' && iconoSeleccionado === 'dark') {
+        cambiarTema(); // Aplicar el tema oscuro si está seleccionado
+    };
+}
+
+/*==================== DECLARACIÓN EL SERVICE WORKER ====================*/ 
 
 if ("serviceWorker" in navigator) {
     window.addEventListener("load", function() {
-      navigator.serviceWorker
+        navigator.serviceWorker
         .register("./serviceworker.js")
         .then(res => console.log("service worker registered"))
         .catch(err => console.log("service worker not registered", err))
     })
-  }
+}
