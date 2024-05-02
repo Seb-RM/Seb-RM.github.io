@@ -5,7 +5,7 @@ Este proyecto es el resultado del curso "Primeros Pasos del Desarrollo Frontend"
 ## Características Principales
 
 - Tecnologías Utilizadas: HTML5, CSS y JavaScript.
-- API Externa: La página obtiene datos de la [API Random User Generator](https://randomuser.me/). Y muestra un perfil distinto cada vez que se carga la página.
+- API Externa: La página obtiene datos de la [API Random User Generator](https://randomuser.me/).
 - Envío de Correos Electrónicos: Se utiliza [SMTP.js](https://smtpjs.com/) para permitir el envío de mensajes desde la sección de contacto.
 - Tema Personalizable: Los usuarios pueden seleccionar entre un tema claro y uno oscuro, y esta selección se guarda localmente utilizando el Local Storage del navegador.
 - Responsiva y PWA: La página está diseñada para ser completamente responsiva y también es una Progressive Web App (PWA), lo que significa que puede ser instalada en dispositivos y accedida desde el escritorio o la pantalla de inicio, lo que proporciona una experiencia similar a la de una aplicación nativa.
